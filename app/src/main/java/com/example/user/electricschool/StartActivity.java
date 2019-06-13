@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.kosalgeek.asynctask.AsyncResponse;
@@ -20,13 +21,14 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
 import java.util.HashMap;
+import java.util.Objects;
 
 public class StartActivity extends AppCompatActivity implements AsyncResponse
 {
     private TextInputEditText edtUserName;
     private TextInputEditText edtPassword;
     private Button btnStart;
-    private Button btnSignin;
+    private TextView btnSignin;
 
 
     private HomeActivity homeActivity;
@@ -42,8 +44,8 @@ public class StartActivity extends AppCompatActivity implements AsyncResponse
 
         edtUserName = findViewById(R.id.edtUserName);
         edtPassword = findViewById(R.id.edtPassword);
-        btnStart = findViewById(R.id.btnStart);
-        btnSignin = findViewById(R.id.btnSignin);
+        btnSignin  = findViewById(R.id.btnStart);
+        btnStart = findViewById(R.id.btnSignin);
 
         btnSignin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,23 +60,28 @@ public class StartActivity extends AppCompatActivity implements AsyncResponse
             public void onClick(View v)
             {
 
-                  username = edtUserName.getText().toString();
-                final String password = edtPassword.getText().toString();
+                  username = Objects.requireNonNull(edtUserName.getText()).toString();
+                final String password = Objects.requireNonNull(edtPassword.getText()).toString();
 
                 if (username.equals("") || password.equals(""))
                 {
                     Snackbar.make(findViewById(R.id.activity_login_start), "Please enter username and password", Snackbar.LENGTH_LONG).show();
                     return;
                 }
-
+                Intent intent = new Intent( StartActivity.this, HomeActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString( "username", username);
+                intent.putExtras(bundle);
+                startActivity(intent);
+                finish();
 
                 //for connect my sql and shared data
-                HashMap<String,String> postData=new HashMap<String,String>();
-                postData.put("username",username);
-                postData.put("password",password);
-
-                PostResponseAsyncTask siginintask = new PostResponseAsyncTask(StartActivity.this,postData);
-                siginintask.execute("http://192.168.43.185:81/ekraa/login.php");
+//                HashMap<String,String> postData=new HashMap<String,String>();
+//                postData.put("username",username);
+//                postData.put("password",password);
+//
+//                PostResponseAsyncTask siginintask = new PostResponseAsyncTask(StartActivity.this,postData);
+//                siginintask.execute("http://192.168.43.185:81/ekraa/login.php");
 
             }
         });

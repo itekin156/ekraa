@@ -6,15 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/mm">
 
+>
+    <ImageView
+        android:id="@+id/pico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/handd"/>
 
     <View
         android:id="@+id/opacityFilter"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:alpha="0.5"
-        android:background="#939393"
+        android:alpha="0.6"
+
+        android:background="@color/colorPrimary"
         tools:scrollbarStyle="outsideOverlay">
 
     </View>
@@ -24,9 +33,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Welcome "
-        android:textSize="50dp"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginTop="50dp"
+        android:layout_below="@id/progressbar"
+        android:textSize="40sp"
+        android:fontFamily="@font/hugme"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
         android:textStyle="italic" />
 
 
@@ -35,10 +46,9 @@
             android:id="@+id/progressbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@id/pico"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="300dp"
-            app:indicatorColor="@color/colorPrimary"/>
+            app:indicatorColor="@color/white"/>
 
 
 </RelativeLayout>

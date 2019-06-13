@@ -35,7 +35,7 @@ public class EvaluationActivity extends AppCompatActivity implements AsyncRespon
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_evaluation);
 
-        recyclereval = (RecyclerView) findViewById(R.id.recyclerEvaluation);
+        recyclereval = findViewById(R.id.recyclerEvaluation);
 
         //for connect my sql and shared data
         HashMap<String,String> postData=new HashMap<String,String>();
