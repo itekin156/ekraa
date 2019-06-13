@@ -1,14 +1,12 @@
 package com.example.user.electricschool;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.user.electricschool.Adapter.adapterRecyclerDiagram;
-import com.example.user.electricschool.Adapter.adapterRecyclerEvaluate;
 import com.example.user.electricschool.Model.Diagram;
-import com.example.user.electricschool.Model.Evaluate;
 
 import java.util.ArrayList;
 

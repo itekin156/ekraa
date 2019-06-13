@@ -4,14 +4,14 @@ package com.example.user.electricschool;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.user.electricschool.RetofitParty.interfaces.StudentApiInterface;
+
 
 public class MainActivity extends AppCompatActivity
 {
     private int TIME = 2000;
-    private StudentApiInterface apiInterface;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)

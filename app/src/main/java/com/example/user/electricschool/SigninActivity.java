@@ -1,11 +1,11 @@
 package com.example.user.electricschool;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.ViewModelProviders;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.ViewModelProviders;
 import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TextInputEditText;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.textfield.TextInputEditText;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -26,7 +26,6 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
 import java.util.HashMap;
-import java.util.List;
 
 public class SigninActivity extends AppCompatActivity  implements AsyncResponse
 {
@@ -57,7 +56,6 @@ public class SigninActivity extends AppCompatActivity  implements AsyncResponse
     protected void onCreate(Bundle savedInstanceState)
     {
 
-        viewModelStudent = ViewModelProviders.of(SigninActivity.this).get(ViewModelStudent.class);
 
         super.onCreate(savedInstanceState);
 

@@ -2,18 +2,14 @@ package com.example.user.electricschool;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-
-import com.example.user.electricschool.R;
-import com.example.user.electricschool.SigninActivity;
-import com.example.user.electricschool.StartActivity;
 
 public class TabFragment3 extends Fragment
 {

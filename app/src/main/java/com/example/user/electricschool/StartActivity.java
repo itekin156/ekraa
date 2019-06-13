@@ -1,19 +1,17 @@
 package com.example.user.electricschool;
 
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 import android.content.Intent;
-import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.TextInputEditText;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.textfield.TextInputEditText;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.user.electricschool.GreenDAO.Model.Student;
-import com.example.user.electricschool.GreenDAO.ViewModel.ViewModelStudent;
 import com.kosalgeek.asynctask.AsyncResponse;
 import com.kosalgeek.asynctask.PostResponseAsyncTask;
 
@@ -22,8 +20,6 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
 import java.util.HashMap;
-import java.util.List;
-import java.util.zip.Inflater;
 
 public class StartActivity extends AppCompatActivity implements AsyncResponse
 {

@@ -34,7 +34,7 @@
         />
 
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginTop="50dp">
 
-        <android.support.design.widget.TextInputEditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,9 +58,9 @@
             android:textStyle="bold"
             android:imeOptions="actionNext"
             />
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtPassword"
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="@color/colorPrimary"
@@ -72,7 +72,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginTop="20dp">
 
-        <android.support.design.widget.TextInputEditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
 
 
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
         android:id="@+id/linnerlatout1"
