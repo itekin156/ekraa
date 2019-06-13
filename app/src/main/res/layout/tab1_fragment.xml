@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mm"
+    >
+
+
+    <View
+        android:id="@+id/opacityFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.6"
+        android:background="#ababab">
+
+    </View>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/txtnameschool"
+        android:text="@string/app_name"
+        android:textSize="40dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:id="@+id/txt1"
+        android:layout_below="@id/txtnameschool"
+        android:text="Our school is interested in training students on behaviors
+        to become adaptive to society."
+        android:textColor="#000"
+        android:textSize="26dp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp" />
+    <TextView
+
+        android:id="@+id/txt2"
+        android:layout_below="@id/txt1"
+        android:text="Also interested in the development of students abilities"
+        android:textColor="#000"
+        android:textSize="26dp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:textColor="#000"
+        android:textSize="26dp"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/txt2"
+        android:text=" And training the student to face the tests ...."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_below="@id/txt4"
+        android:text=" Our goal is to prepare the student for the future stages of his life .."
+        android:textColor="#000"
+        android:textSize="26dp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp" />
+</RelativeLayout>

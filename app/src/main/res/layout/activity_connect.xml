@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:text="Connect Us By : "
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:layout_margin="10dp"
+               android:background="@drawable/facebook"
+               android:id="@+id/imgfacebook"
+               android:layout_width="80dp"
+               android:layout_height="80dp" />
+           <ImageView
+               android:layout_margin="10dp"
+               android:id="@+id/imgLimjedin"
+               android:background="@drawable/linkedin"
+               android:layout_width="80dp"
+               android:layout_height="80dp" />
+           <ImageView
+               android:id="@+id/imgcall"
+               android:background="@drawable/calllll"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="40dp"
+                android:textSize="20dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/txtfacebook"
+                android:text="WWW.FaceBook.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="70dp"
+                android:textSize="20dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:layout_toEndOf="@+id/imgLinkedin"
+                android:id="@+id/txtLinhedin"
+                android:text="WWW.LinkedIn.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="70dp"
+                android:textSize="20dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:layout_toEndOf="@+id/imgCall"
+                android:id="@+id/txtcall"
+                android:text="+963976523456"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

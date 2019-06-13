@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#87016f</color>
+    <color name="dray">#a76b93</color>
+    <color name="colorPrimaryDark">#101010</color>
+    <color name="colorAccent">#939191</color>
+
+    <color name="mdtp_accent_color">#a56d92</color>
+    <color name="mdtp_accent_color_dark">#a56d92</color>
+    <color name="Blue">#a56d92</color>
+
+
+</resources>

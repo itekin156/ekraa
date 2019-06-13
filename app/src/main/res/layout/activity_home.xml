@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@drawable/lasst"
+    >
+
+    <TextView
+        android:id="@+id/txtHomeUserName"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="    name   "
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="175dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/txtHomeEvaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="250dp"
+        android:text="Evaluate"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+
+    <TextView
+
+        android:id="@+id/txtHomeMark"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="Mark"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="260dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:id="@+id/txtHomeDiag"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="Diagram"
+        android:layout_marginTop="450dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+
+        android:id="@+id/txtHomeconectus"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="Conect Us"
+        android:layout_marginTop="470dp"
+        android:layout_marginStart="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+   >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:padding="10dp">
+
+        <TextView
+            android:background="@drawable/shap_text"
+            android:id="@+id/txtsubname"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="5"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:text="NameSubject"
+            android:textSize="20sp" />
+
+        <TextView
+            android:background="@drawable/shap_text"
+            android:gravity="center"
+            android:id="@+id/txtevaluate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="Evaluate"
+            android:maxLines="10"
+            android:minLines="1"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

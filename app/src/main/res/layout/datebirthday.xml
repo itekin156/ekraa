@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginLeft="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/txttext"
+        android:text="plz choose Date"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:background="@drawable/shape_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:fontFamily="@font/muli_regular"
+        android:layout_height="wrap_content" />
+    <DatePicker
+        android:id="@+id/dpDialogDOB"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/txttext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:calendarViewShown="true"
+        android:headerBackground="@drawable/shape_btn"
+        android:theme="@style/TimePickerTheme"
+       />
+
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_btn"
+        android:text="ok"
+        android:textSize="25dp" />
+
+    </LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="13"
+    android:padding="5dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:gravity="center"
+        android:background="@drawable/shap_text"
+        android:id="@+id/txtday"
+        android:textColor="@color/colorPrimary"
+        android:text="day : "
+        android:textSize="17dp"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center"
+        android:background="@drawable/shap_text"
+        android:layout_marginStart="5dp"
+        android:id="@+id/txtSession1"
+        android:textColor="@color/colorPrimary"
+        android:text="day : "
+        android:textSize="17dp"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center"
+        android:background="@drawable/shap_text"
+        android:layout_marginStart="5dp"
+        android:id="@+id/txtSession2"
+        android:textColor="@color/colorPrimary"
+        android:text="day : "
+        android:textSize="17dp"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:background="@drawable/shap_text"
+        android:layout_marginStart="5dp"
+        android:id="@+id/txtSession3"
+        android:textColor="@color/colorPrimary"
+        android:text="day : "
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center"
+        android:background="@drawable/shap_text"
+        android:layout_marginStart="5dp"
+        android:id="@+id/txtSession4"
+        android:textColor="@color/colorPrimary"
+        android:text="day : "
+        android:textSize="17dp"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center"
+        android:background="@drawable/shap_text"
+        android:layout_marginStart="5dp"
+        android:id="@+id/txtSession5"
+        android:textColor="@color/colorPrimary"
+        android:text="day : "
+        android:textSize="17dp"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

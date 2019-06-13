@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".SigninActivity"
+    android:orientation="vertical">
+
+        <TextView
+            style="@style/Base.AlertDialog.AppCompat.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:shadowColor="@color/colorPrimary"
+            android:text="@string/signin"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40sp"
+            android:textStyle="italic" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="50dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/edtCompletename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="20dp"
+                android:maxLines="1"
+                android:maxLength="50"
+
+                android:minLines="1"
+                android:inputType="text"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:hint="@string/sonname"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="20dp"
+                android:inputType="text"
+                android:minLines="1"
+                android:maxLines="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:hint="@string/userName"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_pass_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimary"
+            app:passwordToggleDrawable="@drawable/selector_visibale"
+            android:layout_marginTop="10dp"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText_pass_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="20dp"
+                android:inputType="textPassword"
+                android:minLines="1"
+                android:maxLines="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:hint="@string/password"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_con_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimary"
+            app:passwordToggleDrawable="@drawable/selector_visibale"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText_convirm_name_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="20dp"
+                android:inputType="textPassword"
+                android:minLines="1"
+                android:maxLines="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:hint="@string/conPass"
+                android:textStyle="bold"
+                android:imeOptions="actionDone"
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+        android:background="@drawable/bbb2"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/btnDOB"
+        android:text="DOB"
+        android:textSize="25dp"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtprice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_marginStart="74dp"
+                android:text="here is prise $ "
+                android:textSize="15dp"
+                android:textColor="@color/dray"/>
+
+            <Spinner
+                android:id="@+id/spinnerSigninclass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="30dp"
+                android:entries="@array/clases"
+                ></Spinner>
+        </LinearLayout>
+
+        <Button
+        android:id="@+id/btnDetails"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/bbb2"
+        android:text="@string/details"
+        android:textAllCaps="true"
+        android:textSize="25dp" />
+
+        <android.support.design.widget.FloatingActionButton
+        android:id="@+id/flatDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/dray"
+        android:backgroundTintMode="add"
+        android:src="@drawable/ic_done" />
+
+    </LinearLayout>
+
