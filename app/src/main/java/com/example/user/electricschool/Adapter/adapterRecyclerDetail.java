@@ -38,6 +38,7 @@ public class adapterRecyclerDetail  extends RecyclerView.Adapter<viewHolderDetai
     {
 
 
+
         viewHolderDetail.txtsubnamedetail.setText(details.get(position).getNameSubdetail());
         viewHolderDetail.txtTeacherName.setText(details.get(position).getNameTeacherdetail());
         viewHolderDetail.imageSubdetail.setImageResource(details.get(position).getImgSubdetail());
