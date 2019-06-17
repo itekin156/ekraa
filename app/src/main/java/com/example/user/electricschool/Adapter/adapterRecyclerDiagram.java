@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.user.electricschool.Model.Diagram;
+import com.example.user.electricschool.Model.newDiagram;
 import com.example.user.electricschool.R;
 import com.example.user.electricschool.ViewHolder.viewHolderDiagram;
 
@@ -17,9 +18,9 @@ public class adapterRecyclerDiagram  extends RecyclerView.Adapter<viewHolderDiag
 {
 
     private Context context;
-    private ArrayList<Diagram> diagrams;
+    private ArrayList<newDiagram> diagrams;
 
-    public adapterRecyclerDiagram(Context context, ArrayList<Diagram> diagrams)
+    public adapterRecyclerDiagram(Context context, ArrayList<newDiagram> diagrams)
     {
         this.context = context;
         this.diagrams = diagrams;
@@ -29,20 +30,23 @@ public class adapterRecyclerDiagram  extends RecyclerView.Adapter<viewHolderDiag
     @Override
     public viewHolderDiagram onCreateViewHolder(@NonNull ViewGroup viewGroup, int i)
     {
-        View view = (View) LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_diagram, viewGroup,false);
-        viewHolderDiagram viewHolderDiagram = new viewHolderDiagram(view);
-        return viewHolderDiagram ;
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_diagram, viewGroup,false);
+        return new viewHolderDiagram(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull viewHolderDiagram viewHolderDiagram, int position)
     {
-        viewHolderDiagram.txtday.setText(diagrams.get(position).getTxtday().toString());
-        viewHolderDiagram.txtSession1.setText(diagrams.get(position).getTxtSession1().toString());
-        viewHolderDiagram.txtSession2.setText(diagrams.get(position).getTxtSession2().toString());
-        viewHolderDiagram.txtSession3.setText(diagrams.get(position).getTxtSession3().toString());
-        viewHolderDiagram.txtSession4.setText(diagrams.get(position).getTxtSession4().toString());
-        viewHolderDiagram.txtSession5.setText(diagrams.get(position).getTxtSession5().toString());
+//        viewHolderDiagram.txtday.setText(diagrams.get(position).getTxtday().toString());
+//        viewHolderDiagram.txtSession1.setText(diagrams.get(position).getTxtSession1().toString());
+//        viewHolderDiagram.txtSession2.setText(diagrams.get(position).getTxtSession2().toString());
+//        viewHolderDiagram.txtSession3.setText(diagrams.get(position).getTxtSession3().toString());
+//        viewHolderDiagram.txtSession4.setText(diagrams.get(position).getTxtSession4().toString());
+//        viewHolderDiagram.txtSession5.setText(diagrams.get(position).getTxtSession5().toString());
+
+        viewHolderDiagram.Time.setText(diagrams.get(position).getTime());
+        viewHolderDiagram.Material.setText(diagrams.get(position).getMaterial());
+        viewHolderDiagram.Location.setText(diagrams.get(position).getLocation());
 
     }
 

@@ -7,33 +7,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
 
+
 >
+
+
     <ImageView
         android:id="@+id/pico"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="100dp"
-        android:src="@drawable/handd"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mm"/>
 
     <View
         android:id="@+id/opacityFilter"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:alpha="0.6"
+        android:alpha="0.4"
 
         android:background="@color/colorPrimary"
         tools:scrollbarStyle="outsideOverlay">
 
     </View>
+
     <TextView
+        android:id="@+id/txtw"
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Welcome "
-        android:layout_below="@id/progressbar"
         android:textSize="40sp"
         android:fontFamily="@font/hugme"
         android:layout_centerInParent="true"
@@ -42,13 +44,12 @@
 
 
 
-        <com.wang.avi.AVLoadingIndicatorView
-            android:id="@+id/progressbar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/pico"
-            android:layout_centerHorizontal="true"
-            app:indicatorColor="@color/white"/>
-
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtw"
+        app:indicatorColor="@color/white"/>
 
 </RelativeLayout>

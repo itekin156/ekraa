@@ -1,69 +1,131 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HomeActivity"
-    android:background="@drawable/lasst"
-    >
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/txtHomeUserName"
-        android:textSize="30dp"
-        android:textColor="@color/colorPrimary"
-        android:text="    name   "
-        android:layout_marginTop="70dp"
-        android:layout_marginStart="175dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary"
+            android:scaleType="centerCrop"
+            android:src="@drawable/education" />
 
-    <TextView
-        android:id="@+id/txtHomeEvaluate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="250dp"
-        android:text="Evaluate"
-        android:textColor="@color/colorPrimary"
-        android:textSize="30dp" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="20dp">
 
-    <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-        android:id="@+id/txtHomeMark"
-        android:textSize="30dp"
-        android:textColor="@color/colorPrimary"
-        android:text="Mark"
-        android:layout_marginTop="280dp"
-        android:layout_marginStart="260dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
+                <TextView
+                    android:id="@+id/txtHomeUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="    name   "
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
 
-        android:id="@+id/txtHomeDiag"
-        android:textSize="30dp"
-        android:textColor="@color/colorPrimary"
-        android:text="Diagram"
-        android:layout_marginTop="450dp"
-        android:layout_marginStart="50dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mm"
+                    android:gravity="center"
+                    android:text=" San Francisco"
+                    android:textColor="@color/grey" />
 
+                <include
+                    layout="@layout/separator_layout_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-
-    <TextView
-
-        android:id="@+id/txtHomeconectus"
-        android:textSize="30dp"
-        android:textColor="@color/colorPrimary"
-        android:text="Conect Us"
-        android:layout_marginTop="470dp"
-        android:layout_marginStart="250dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            </LinearLayout>
 
 
+        </androidx.cardview.widget.CardView>
 
-</RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card1"
+            android:layout_margin="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtHomeEvaluate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Evaluate"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <include layout="@layout/separator_layout_sample" />
+
+
+                <TextView
+
+                    android:id="@+id/txtHomeMark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Mark"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <include layout="@layout/separator_layout_sample" />
+
+
+
+                    <TextView
+
+                        android:id="@+id/txtHomeDiag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Diagram"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+<include layout="@layout/separator_layout_sample"/>
+
+
+                    <TextView
+
+                        android:id="@+id/txtHomeconectus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:text="Conect Us"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
