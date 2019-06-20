@@ -1,82 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mm"
-    >
+    android:orientation="vertical"
+    android:textDirection="ltr">
 
-
-    <View
-        android:id="@+id/opacityFilter"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:alpha="0.6"
-        android:background="#ababab">
-
-    </View>
     <TextView
-        android:layout_marginTop="20dp"
-        android:textColor="@color/colorPrimary"
         android:id="@+id/txtnameschool"
-        android:text="@string/app_name"
-        android:textSize="40dp"
-        android:textStyle="italic"
-        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-
-        android:id="@+id/txt1"
-        android:layout_below="@id/txtnameschool"
-        android:text="Our school is interested in training students on behaviors
-        to become adaptive to society."
-        android:textColor="#000"
-        android:textSize="26dp"
-        android:textStyle="italic"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_gravity="start"
         android:layout_marginStart="20dp"
-        android:layout_marginRight="20dp" />
-    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp" />
 
-        android:id="@+id/txt2"
-        android:layout_below="@id/txt1"
-        android:text="Also interested in the development of students abilities"
-        android:textColor="#000"
-        android:textSize="26dp"
-        android:textStyle="italic"
-        android:layout_width="wrap_content"
+    <include
+        layout="@layout/separator_layout_sample_prime2"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginRight="20dp" />
+        android:layout_marginStart="10dp" />
 
-    <TextView
-        android:id="@+id/txt4"
-        android:textColor="#000"
-        android:textSize="26dp"
-        android:textStyle="italic"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_below="@id/txt2"
-        android:text=" And training the student to face the tests ...."
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/txt3"
-        android:layout_below="@id/txt4"
-        android:text=" Our goal is to prepare the student for the future stages of his life .."
-        android:textColor="#000"
-        android:textSize="26dp"
-        android:textStyle="italic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginRight="20dp" />
-</RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Version" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="3.24.0.11.1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Last Update" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="June 2019"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+
+                android:text="@string/our_school_is_interested_in_training_students_on_behaviors_to_become_adaptive_to_society"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <include layout="@layout/separator_layout_sample" />
+
+            <TextView
+
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+
+                android:text="@string/also_interested_in_the_development_of_students_abilities"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <include layout="@layout/separator_layout_sample" />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt2"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+
+                android:text="@string/and_training_the_student_to_face_the_tests"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <include layout="@layout/separator_layout_sample" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/our_goal_is_to_prepare_the_student_for_the_future_stages_of_his_life"
+
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/all_rights_reserved"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

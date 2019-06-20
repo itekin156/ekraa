@@ -16,7 +16,7 @@ public class viewHolderDetail extends RecyclerView.ViewHolder
             {
                 super(view);
                 imageSubdetail = view.findViewById(R.id.imageSubdetail);
-                txtsubnamedetail = (TextView)view.findViewById(R.id.txtsubnamedetail);
-                txtTeacherName = (TextView)view.findViewById(R.id.txtTeacherName);
+                txtsubnamedetail = view.findViewById(R.id.txtsubnamedetail);
+                txtTeacherName = view.findViewById(R.id.txtTeacherName);
             }
 }

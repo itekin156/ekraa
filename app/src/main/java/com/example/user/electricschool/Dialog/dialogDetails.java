@@ -16,7 +16,6 @@ import com.example.user.electricschool.SigninActivity;
 
 public class dialogDetails extends DialogFragment
 {
-    private Button btnok;
     private DatePicker datePicker;
     private String date;
     private SigninActivity signinActivity;
@@ -29,9 +28,9 @@ public class dialogDetails extends DialogFragment
         View view = inflater.inflate(R.layout.datebirthday , container, false);
         signinActivity = (SigninActivity) getActivity();
 
-        datePicker = (DatePicker)view.findViewById(R.id.dpDialogDOB);
+        datePicker = view.findViewById(R.id.dpDialogDOB);
 
-        btnok= (Button)view.findViewById(R.id.btnok);
+        Button btnok = view.findViewById(R.id.btnok);
         btnok.setOnClickListener(new View.OnClickListener()
         {
 

@@ -31,4 +31,9 @@
     <string name="title_activity_basic">Basic Example</string>
     <string name="title_activity_asynchronous">Asynchronous Events</string>
     <string name="async_error">Could not download events from the internet</string>
+    <string name="our_school_is_interested_in_training_students_on_behaviors_to_become_adaptive_to_society">Our school is interested in training students on behaviors to become adaptive to society.</string>
+    <string name="also_interested_in_the_development_of_students_abilities">Also interested in the development of students abilities</string>
+    <string name="and_training_the_student_to_face_the_tests">And training the student to face the tests ....</string>
+    <string name="our_goal_is_to_prepare_the_student_for_the_future_stages_of_his_life">Our goal is to prepare the student for the future stages of his life ..</string>
+    <string name="all_rights_reserved">All rights reserved</string>
 </resources>
