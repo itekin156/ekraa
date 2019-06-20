@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.user.electricschool.Model.Diagram;
 import com.example.user.electricschool.Model.newDiagram;
 import com.example.user.electricschool.R;
 import com.example.user.electricschool.ViewHolder.viewHolderDiagram;
@@ -17,12 +16,11 @@ import java.util.ArrayList;
 public class adapterRecyclerDiagram  extends RecyclerView.Adapter<viewHolderDiagram>
 {
 
-    private Context context;
     private ArrayList<newDiagram> diagrams;
 
     public adapterRecyclerDiagram(Context context, ArrayList<newDiagram> diagrams)
     {
-        this.context = context;
+        Context context1 = context;
         this.diagrams = diagrams;
     }
 

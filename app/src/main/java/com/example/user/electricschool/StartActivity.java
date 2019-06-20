@@ -1,9 +1,7 @@
 package com.example.user.electricschool;
 
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 import android.content.Intent;
-import androidx.annotation.Nullable;
+
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,21 +12,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.kosalgeek.asynctask.AsyncResponse;
-import com.kosalgeek.asynctask.PostResponseAsyncTask;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
-import java.util.HashMap;
 import java.util.Objects;
 
 public class StartActivity extends AppCompatActivity implements AsyncResponse
 {
     private TextInputEditText edtUserName;
     private TextInputEditText edtPassword;
-    private Button btnStart;
-    private TextView btnSignin;
 
 
     private HomeActivity homeActivity;
@@ -44,8 +38,8 @@ public class StartActivity extends AppCompatActivity implements AsyncResponse
 
         edtUserName = findViewById(R.id.edtUserName);
         edtPassword = findViewById(R.id.edtPassword);
-        btnSignin  = findViewById(R.id.btnStart);
-        btnStart = findViewById(R.id.btnSignin);
+        TextView btnSignin = findViewById(R.id.btnStart);
+        Button btnStart = findViewById(R.id.btnSignin);
 
         btnSignin.setOnClickListener(new View.OnClickListener() {
             @Override

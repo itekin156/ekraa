@@ -18,11 +18,6 @@ public class TabFragment2 extends Fragment
 {
 
 
-
-    private ArrayList<detail> details;
-    private RecyclerView recyclerViewDetail;
-    private RecyclerView.Adapter adapter;
-    private RecyclerView.LayoutManager layoutManager;
     private static final String secondPage ="SecondPage";
 
     @Nullable
@@ -31,9 +26,9 @@ public class TabFragment2 extends Fragment
     {
 
             View view = inflater.inflate(R.layout.tab2_fragment, container , false);
-            recyclerViewDetail = view.findViewById(R.id.recyclerViewDetail);
+        RecyclerView recyclerViewDetail = view.findViewById(R.id.recyclerViewDetail);
 
-            details = new ArrayList<>();
+        ArrayList<detail> details = new ArrayList<>();
             details.add(new detail(R.drawable.history,"history", "Rami Hassan" ));
             details.add(new detail(R.drawable.chimstry,"chemistry", "Rami Hassan"));
             details.add(new detail(R.drawable.art, "Art", "Rami Hassan"));
@@ -46,9 +41,9 @@ public class TabFragment2 extends Fragment
 
 
             recyclerViewDetail.setHasFixedSize(true);
-            layoutManager = new LinearLayoutManager(getContext());
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
             recyclerViewDetail.setLayoutManager(layoutManager);
-            adapter = new adapterRecyclerDetail(getContext(), details);
+        RecyclerView.Adapter adapter = new adapterRecyclerDetail(getContext(), details);
             recyclerViewDetail.setAdapter(adapter);
 
             return view;

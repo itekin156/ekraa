@@ -15,7 +15,6 @@ public class ConnectActivity extends AppCompatActivity
 
     private RecyclerView recyclerView;
 
-    private ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -23,7 +22,7 @@ public class ConnectActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_connect);
 
-        progressDialog = new ProgressDialog(this);
+        ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Loading....");
         progressDialog.show();
     }

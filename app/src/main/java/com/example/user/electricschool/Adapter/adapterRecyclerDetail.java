@@ -16,11 +16,10 @@ import java.util.ArrayList;
 public class adapterRecyclerDetail  extends RecyclerView.Adapter<viewHolderDetail>
 {
 
-    private Context context;
     private ArrayList<detail> details;
     public adapterRecyclerDetail(Context context, ArrayList<detail> details)
     {
-        this.context = context;
+        Context context1 = context;
         this.details = details;
     }
 

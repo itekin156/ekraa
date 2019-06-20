@@ -1,7 +1,5 @@
 package com.example.user.electricschool;
 
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -26,6 +24,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
 import java.util.HashMap;
+import java.util.Objects;
 
 public class SigninActivity extends AppCompatActivity  implements AsyncResponse
 {
@@ -37,8 +36,6 @@ public class SigninActivity extends AppCompatActivity  implements AsyncResponse
     private Spinner spinnerSigninclass;
     private TextView txtprice;
     private Button btnDOB;
-    private Button btnDetails;
-    private FloatingActionButton flatDone;
     private dialogDetails dialogdetails ;
 
 
@@ -69,8 +66,8 @@ public class SigninActivity extends AppCompatActivity  implements AsyncResponse
         editText_convirm_name_user_name = findViewById(R.id.editText_convirm_name_user_name);
         txtprice = findViewById(R.id.txtprice);
         btnDOB = findViewById(R.id.btnDOB);
-        btnDetails = findViewById(R.id.btnDetails);
-        flatDone = findViewById(R.id.flatDone);
+        Button btnDetails = findViewById(R.id.btnDetails);
+        FloatingActionButton flatDone = findViewById(R.id.flatDone);
         spinnerSigninclass = findViewById(R.id.spinnerSigninclass);
 
 
@@ -141,7 +138,7 @@ public class SigninActivity extends AppCompatActivity  implements AsyncResponse
             @Override
             public void onClick(View v)
             {
-                name = editText_user_name.getText().toString();
+                name = Objects.requireNonNull(editText_user_name.getText()).toString();
                 if(name.equals("") || password.equals("") || price.equals("") || confirmpassword.equals("") || Completenamestr.equals("") || birthday.equals("")  )
                 {
                     Toast.makeText(SigninActivity.this, "plz enter All The Details", Toast.LENGTH_SHORT).show();

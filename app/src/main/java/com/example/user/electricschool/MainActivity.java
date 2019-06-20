@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity
 {
-    private int TIME = 2000;
 
 
     @Override
@@ -20,8 +19,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
 
-
-
+        int TIME = 2000;
         new Handler().postDelayed(new Runnable()
         {
             @Override
@@ -31,7 +29,7 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
                 finish();
             }
-        }, TIME );
+        }, TIME);
 
     }
 

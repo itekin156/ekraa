@@ -12,9 +12,6 @@ import com.example.user.electricschool.Adapter.adapterSectionFragment;
 public class DetailActivity extends AppCompatActivity
 {
     private static final String tag = "DetailActivity";
-    private adapterSectionFragment adapterSectionFragment;
-    private  ViewPager viewPager;
-    private  TabLayout tabLayout;
 
 
     @Override
@@ -24,10 +21,10 @@ public class DetailActivity extends AppCompatActivity
         setContentView(R.layout.activity_detail);
         Log.d(tag, "onCreate : Starting");
 
-         adapterSectionFragment = new adapterSectionFragment(getSupportFragmentManager());
-         viewPager = (ViewPager) findViewById(R.id.container);
+        com.example.user.electricschool.Adapter.adapterSectionFragment adapterSectionFragment = new adapterSectionFragment(getSupportFragmentManager());
+        ViewPager viewPager = findViewById(R.id.container);
          SetupViewPager(viewPager);
-         tabLayout = (TabLayout) findViewById(R.id.tabs);
+        TabLayout tabLayout = findViewById(R.id.tabs);
          tabLayout.setupWithViewPager(viewPager);
     }
 

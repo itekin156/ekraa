@@ -15,12 +15,11 @@ import java.util.ArrayList;
 
 public class adapterRecyclerMark extends RecyclerView.Adapter<viewHolderMark>
 {
-    private Context context;
     private ArrayList<Mark> marks;
 
     public adapterRecyclerMark(Context context, ArrayList<Mark> marks)
     {
-        this.context = context;
+        Context context1 = context;
         this.marks = marks;
     }
 

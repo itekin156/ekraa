@@ -13,7 +13,6 @@ import android.widget.TextView;
 
 public class TabFragment3 extends Fragment
 {
-    private Button btntabeSingnin;
     private Button btnTabCancel;
     private TextView txttabfragmentprice;
 
@@ -27,7 +26,7 @@ public class TabFragment3 extends Fragment
         View view = inflater.inflate(R.layout.tab3_fragment, container , false);
 
 
-        btntabeSingnin = view.findViewById(R.id.btntabeSingnin);
+        Button btntabeSingnin = view.findViewById(R.id.btntabeSingnin);
         btntabeSingnin.setOnClickListener(new View.OnClickListener()
         {
             @Override

@@ -16,29 +16,23 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.user.electricschool.Adapter.adapterRecyclerDiagram;
-import com.example.user.electricschool.Model.Diagram;
 import com.example.user.electricschool.Model.newDiagram;
 
 import java.util.ArrayList;
 
 public class DiagramActivity extends AppCompatActivity {
     Animation show, hide;
-    private ArrayList<newDiagram> diagrams;
-    private RecyclerView recyclerediagram;
-    private RecyclerView.Adapter adapter;
-    private RecyclerView.LayoutManager layoutManager;
     ConstraintLayout constraintLayout;
     NestedScrollView nestedScrollView;
-    private Button allSchedual;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diagram);
         constraintLayout = findViewById(R.id.constrantLayout);
-        recyclerediagram = findViewById(R.id.recyclerDiagram);
-        diagrams = new ArrayList<>();
-        allSchedual = findViewById(R.id.allSchedulao);
+        RecyclerView recyclerediagram = findViewById(R.id.recyclerDiagram);
+        ArrayList<newDiagram> diagrams = new ArrayList<>();
+        Button allSchedual = findViewById(R.id.allSchedulao);
         allSchedual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,9 +73,9 @@ public class DiagramActivity extends AppCompatActivity {
             }
         });
         recyclerediagram.setHasFixedSize(true);
-        layoutManager = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerediagram.setLayoutManager(layoutManager);
-        adapter = new adapterRecyclerDiagram(this, diagrams);
+        RecyclerView.Adapter adapter = new adapterRecyclerDiagram(this, diagrams);
         recyclerediagram.setAdapter(adapter);
     }
 }

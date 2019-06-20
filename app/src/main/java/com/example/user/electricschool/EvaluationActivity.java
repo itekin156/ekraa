@@ -25,8 +25,6 @@ public class EvaluationActivity extends AppCompatActivity implements AsyncRespon
 
     private ArrayList<Evaluate> evaluates;
     private RecyclerView recyclereval;
-    private RecyclerView.Adapter adapter;
-    private RecyclerView.LayoutManager layoutManager;
 
 
     @Override
@@ -48,7 +46,7 @@ public class EvaluationActivity extends AppCompatActivity implements AsyncRespon
 
 
         recyclereval.setHasFixedSize(true);
-        layoutManager = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclereval.setLayoutManager(layoutManager);
 
 
@@ -71,7 +69,7 @@ public class EvaluationActivity extends AppCompatActivity implements AsyncRespon
                 String comment = e.getElementsByTagName("imagematerial").item(0).getTextContent();
                 evaluates.add(new Evaluate(material_name, comment));
 
-                adapter = new adapterRecyclerEvaluate(this , evaluates);
+                RecyclerView.Adapter adapter = new adapterRecyclerEvaluate(this, evaluates);
                 recyclereval.setAdapter(adapter);
 
             }

@@ -6,16 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.Objects;
+
 
 public class HomeActivity extends AppCompatActivity
 {
-    private TextView txtHomeUserName;
-    private TextView txtHomeEvaluate;
-    private TextView txtHomeMark;
-    private TextView txtHomeDiag;
-    private TextView txtHomeconectus;
-
-    private String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -24,16 +19,16 @@ public class HomeActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        txtHomeUserName = findViewById(R.id.txtHomeUserName);
-        txtHomeEvaluate = findViewById(R.id.txtHomeEvaluate);
-        txtHomeMark = findViewById(R.id.txtHomeMark);
-        txtHomeDiag = findViewById(R.id.txtHomeDiag);
-        txtHomeconectus = findViewById(R.id.txtHomeconectus);
+        TextView txtHomeUserName = findViewById(R.id.txtHomeUserName);
+        TextView txtHomeEvaluate = findViewById(R.id.txtHomeEvaluate);
+        TextView txtHomeMark = findViewById(R.id.txtHomeMark);
+        TextView txtHomeDiag = findViewById(R.id.txtHomeDiag);
+        TextView txtHomeconectus = findViewById(R.id.txtHomeconectus);
 
 
         Intent in = getIntent();
         Bundle bundle = in.getExtras();
-        name = bundle.getString("username");
+        String name = Objects.requireNonNull(bundle).getString("username");
         txtHomeUserName.setText(name);
 
 

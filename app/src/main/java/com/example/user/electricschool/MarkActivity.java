@@ -17,6 +17,7 @@ import org.w3c.dom.NodeList;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Objects;
 
 public class MarkActivity extends AppCompatActivity implements AsyncResponse
 {
@@ -24,8 +25,6 @@ public class MarkActivity extends AppCompatActivity implements AsyncResponse
     private int imag_material;
     private ArrayList<Mark> marks;
     private RecyclerView recyclermark;
-    private RecyclerView.Adapter adapter;
-    private RecyclerView.LayoutManager layoutManager;
 
 
     @Override
@@ -57,7 +56,7 @@ public class MarkActivity extends AppCompatActivity implements AsyncResponse
 
             recyclermark = (RecyclerView) findViewById(R.id.recyclerviewmark);
             recyclermark.setHasFixedSize(true);
-            layoutManager = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
             recyclermark.setLayoutManager(layoutManager);
 
 
@@ -84,13 +83,13 @@ public class MarkActivity extends AppCompatActivity implements AsyncResponse
                 String second_quiz_mark = e.getElementsByTagName("second_quiz_mark").item(0).getTextContent();
                 String assignment_mark = e.getElementsByTagName("assignment_mark").item(0).getTextContent();
 
-                if(material_name=="arabic")
+                if(Objects.equals(material_name, "arabic"))
                 imag_material =R.drawable.arabic;
 
 
                marks.add(new Mark(imag_material,material_name,Integer.parseInt(first_quiz_mark),Integer.parseInt(second_quiz_mark),Integer.parseInt(assignment_mark)));
 
-                adapter = new adapterRecyclerMark(this, marks);
+                RecyclerView.Adapter adapter = new adapterRecyclerMark(this, marks);
                 recyclermark.setAdapter(adapter);
 
             }

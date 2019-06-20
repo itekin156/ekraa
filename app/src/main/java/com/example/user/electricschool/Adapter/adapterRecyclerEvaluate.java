@@ -16,12 +16,11 @@ import java.util.ArrayList;
 public class adapterRecyclerEvaluate extends RecyclerView.Adapter<viewHolderEvaluate>
 {
 
-    private Context context;
     private ArrayList<Evaluate> evaluats;
 
     public adapterRecyclerEvaluate(Context context, ArrayList<Evaluate> evaluats)
     {
-        this.context = context;
+        Context context1 = context;
         this.evaluats = evaluats;
     }
 
