@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.user.electricschool">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -7,10 +8,13 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/handd"
-        android:label="Ekraa"
+        android:label="@string/Ekraa"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:label"
+        >
         <activity android:name=".AllDaigramActivity"
             android:theme="@style/AppTheme2"></activity>
         <activity android:name=".MainActivity">

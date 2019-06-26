@@ -4,11 +4,11 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="190dp"
             android:background="@color/colorPrimary"
             android:scaleType="centerCrop"
             android:src="@drawable/education" />
@@ -25,7 +25,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/backber"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:text="Good Night"
+                    android:textColor="@color/white" />
                 <TextView
                     android:id="@+id/txtHomeUserName"
                     android:layout_width="wrap_content"
@@ -35,21 +44,11 @@
                     android:gravity="center"
                     android:text="    name   "
                     android:textColor="@color/colorPrimary"
-                    android:textSize="20sp" />
+                    android:textSize="16sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/mm"
-                    android:gravity="center"
-                    android:text=" San Francisco"
-                    android:textColor="@color/grey" />
 
-                <include
-                    layout="@layout/separator_layout_sample"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+
+
 
             </LinearLayout>
 
@@ -59,70 +58,162 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:layout_below="@id/card1"
-            android:layout_margin="20dp">
+            android:layout_margin="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-
-                <TextView
-                    android:id="@+id/txtHomeEvaluate"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:text="Evaluate"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="20sp" />
+                    android:orientation="horizontal">
 
-                <include layout="@layout/separator_layout_sample" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
 
+                        android:orientation="vertical"
+                        android:padding="5dp">
 
-                <TextView
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_hourglass" />
 
-                    android:id="@+id/txtHomeMark"
-                    android:layout_width="wrap_content"
+                        <TextView
+
+                            android:id="@+id/txtHomeDiag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:text="Diagram"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <include
+                        layout="@layout/separator_layout_sample_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+
+                        android:layout_weight="1.9" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_test" />
+
+                        <TextView
+
+                            android:id="@+id/txtHomeMark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:textStyle="bold"
+
+                            android:text="Mark"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <include layout="@layout/separator_layout_sample_prime3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:text="Mark"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="20sp" />
+                    android:orientation="horizontal">
 
-                <include layout="@layout/separator_layout_sample" />
-
-
-
-                    <TextView
-
-                        android:id="@+id/txtHomeDiag"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="10dp"
-                        android:text="Diagram"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_geography" />
+
+                        <TextView
+
+                            android:id="@+id/txtHomeconectus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:text="Conect Us"
+                            android:textStyle="bold"
+
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <include
+                        layout="@layout/separator_layout_sample_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:gravity="center"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="20sp" />
+android:layout_marginBottom="15dp"
+                        android:layout_weight="1.9" />
 
-<include layout="@layout/separator_layout_sample"/>
-
-
-                    <TextView
-
-                        android:id="@+id/txtHomeconectus"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="10dp"
-                        android:layout_gravity="center"
-                        android:text="Conect Us"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="20sp" />
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_thinking" />
+
+                        <TextView
+                            android:id="@+id/txtHomeEvaluate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Evaluate"
+                            android:textStyle="bold"
+
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
 
             </LinearLayout>
 

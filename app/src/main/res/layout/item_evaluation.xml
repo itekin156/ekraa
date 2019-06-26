@@ -1,42 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout android:id="@+id/linearLayoutCardContent"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/bbb3"
     android:orientation="vertical"
-    android:padding="15dp"
-   >
+    android:layout_marginBottom="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/txtTeacherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="T. Mohmmad"
+        android:textStyle="bold" />
+
+    <include layout="@layout/separator_layout_sample" />
 
     <LinearLayout
+        android:id="@+id/toggleDetails"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="10"
-        android:padding="10dp">
+        android:padding="8dp">
+        <ImageView
+            android:id="@+id/imgbdg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:tint="@color/colorPrimary"
+            android:src="@drawable/ic_notification"
+            android:layout_height="wrap_content" />
 
         <TextView
-            android:background="@drawable/shap_text"
-            android:id="@+id/txtsubname"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:layout_weight="5"
-            android:layout_marginRight="10dp"
             android:layout_height="wrap_content"
-            android:text="NameSubject"
-            android:textSize="20sp" />
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="22dp"
+            android:layout_weight="1"
+
+            android:fontFamily="@font/a5"
+            android:gravity="center_vertical"
+            android:text="التفاصيل " />
+
+
+
+        <ImageView
+            android:id="@+id/imageViewExpand"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/details"
+            android:src="@drawable/more" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:visibility="gone">
 
         <TextView
-            android:background="@drawable/shap_text"
-            android:gravity="center"
-            android:id="@+id/txtevaluate"
-            android:layout_width="0dp"
+            android:id="@+id/txtViewDetalis"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:hint="Evaluate"
-            android:maxLines="10"
-            android:minLines="1"
-            android:textSize="20sp" />
+            android:fontFamily="@font/a3"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="الطالب كويس وفهمان "
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
     </LinearLayout>
 
 

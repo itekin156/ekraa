@@ -1,35 +1,28 @@
 package com.example.user.electricschool.Model;
 
-public class Evaluate
-{
-        private String namesub;
-        private  String evaluateteach;
+public class Evaluate {
 
-    public Evaluate(String namesub, String evaluateteach )
-    {
-        this.namesub = namesub;
-        this.evaluateteach = evaluateteach;
+    String NameTeacher;
+    String Descripation;
+
+    public Evaluate(String nameTeacher, String descripation) {
+        NameTeacher = nameTeacher;
+        Descripation = descripation;
     }
 
-
-
-    public String getNamesub()
-    {
-        return namesub;
+    public String getNameTeacher() {
+        return NameTeacher;
     }
 
-        public void setNamesub(String namesub)
-        {
-        this.namesub = namesub;
+    public void setNameTeacher(String nameTeacher) {
+        NameTeacher = nameTeacher;
     }
 
-        public String getEvaluateteach()
-        {
-        return evaluateteach;
+    public String getDescripation() {
+        return Descripation;
     }
 
-        public void setEvaluateteach(String evaluateteach)
-        {
-        this.evaluateteach = evaluateteach;
+    public void setDescripation(String descripation) {
+        Descripation = descripation;
     }
 }
