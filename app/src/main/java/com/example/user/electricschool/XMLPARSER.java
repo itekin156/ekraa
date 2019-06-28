@@ -14,7 +14,7 @@ import org.xml.sax.SAXException;
 import android.util.Log;
 
 public class XMLPARSER {
-
+// بخخخخخخخخخخخخخخخخخخ
     public Document getDomElement(String xml){
         Document doc = null;
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
